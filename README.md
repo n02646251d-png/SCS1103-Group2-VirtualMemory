@@ -32,7 +32,7 @@ To compare FIFO(First In ,First Out), LRU (Least Recently Used) and Clock page r
 
 ## Objectives
 
-1. Build a Python simulator that replays a list of function calls through FIFO, LRU and Clock with a fixed number of RAM slots.
+1. Build a C# simulator that replays a list of function calls through FIFO, LRU and Clock with a fixed number of RAM slots.
 2. Run all three policies on the Azure Functions 2021 trace, treating each function as a page and each invocation as a page request, at RAM sizes of 1%,5%,10% and 25% of the distinct functions in the data.
 3. Evaluate by measuring the page-fault rate (faults ÷ invocations) and the hit rate (hits ÷ invocations) at each RAM size, with FIFO as the baseline. A policy succeeds if it cuts the fault rate by at least 10% (relative to FIFO) at 3 or more of the 4 RAM sizes. The best policy is the one that succeeds and has the lowest average fault rate.
 
